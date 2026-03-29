@@ -4,7 +4,7 @@ from telegram.ext import ApplicationBuilder, MessageHandler, filters
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 ALLOWED_GROUP_ID = int(os.environ["ALLOWED_GROUP_ID"])
 
-KEYWORDS = ["charters", "charter"]
+KEYWORDS = ["Redditors", "Redditor", "redditor", "redditors"]
 
 async def check_message(update, context):
     if update.message.chat_id != ALLOWED_GROUP_ID:
